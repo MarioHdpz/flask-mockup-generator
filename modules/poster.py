@@ -1,8 +1,8 @@
 import textwrap
 from PIL import ImageFont, ImageDraw, Image
 
-POSTER_ROUTE = 'assets/poster.jpg'
-FONT = 'assets/Market_Deco.ttf'
+POSTER_ROUTE = 'modules/assets/poster.jpg'
+FONT = 'modules/assets/Market_Deco.ttf'
 SIZE = (512, 512)
 
 class MoviePoster:
@@ -43,5 +43,5 @@ class MoviePoster:
 
 if __name__ == "__main__":
     poster = MoviePoster()
-    poster.make_poster('EL CLUB DE LA PELEA', '01/01/2019', ['Brad Pitt', 'Edward Norton'])
+    poster.make_poster('El club de la pelea', '01/01/2019', ['Brad Pitt', 'Edward Norton'])
     poster.image.show()
